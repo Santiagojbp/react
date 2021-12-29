@@ -1,4 +1,4 @@
-*{
+/**{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -109,4 +109,4 @@ header div div nav ul li:hover > ul {
   to {
     transform: rotate(360deg);
   }
-}
+}*/
