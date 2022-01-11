@@ -1,11 +1,4 @@
 import inventario from './../data/inventario'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  NavLink
-} from "react-router-dom";
 export default AgregarProductos
 function AgregarProductos() {
 return(
