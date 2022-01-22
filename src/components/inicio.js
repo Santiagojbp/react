@@ -1,23 +1,25 @@
-import BienvenidoTag from './bienvenidos'
-import CarruselImg from './carrusel'
-import AgregarProductos from './productosAgregar'
-import NavComponents from './Nav'
+import React from 'react'
+import BienvenidoTag from "./bienvenidos.js"
+import CarruselImg from "./carrusel.js"
+import AgregarProductos from "./productosAgregar.js"
+import NavComponents from "./Nav.js"
 export default Inicio
 function Inicio() {
 	return(
-		<div>
-			<header className="App-header">
-              <NavComponents/>
-            </header>
-            <section>
-              <BienvenidoTag/>
-              <CarruselImg/>
-            </section>
-            <section>
-              <div id="contenedor-productos" className="row">
-                <AgregarProductos/>
-              </div>
-            </section>
-		</div>
+    <React.Fragment>
+  			<header className="App-header"> 
+                <NavComponents/>
+              </header>
+              <section>
+                <BienvenidoTag/>
+                <CarruselImg/>
+              </section>
+              <section>
+                <div id="contenedor-productos" className="row">
+                  <AgregarProductos/>
+                </div>
+              </section>
+            <header/>
+    </React.Fragment>
 		)
 }
