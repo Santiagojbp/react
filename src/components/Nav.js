@@ -1,5 +1,6 @@
 import React from 'react'
-import logo from './../assets/img/fondos/icono2.0.jpg';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+let logo = './assets/img/fondos/icono2.0.jpg';
 export default NavComponents 
 function NavComponents() {
 	return (

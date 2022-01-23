@@ -1,12 +1,16 @@
-import inventario from './../data/inventario'
+import { Link } from 'react-router-dom';
+import useParams from 'react-router-dom'
+
 import React from 'react'
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import inventario from './../data/inventario'
 export default AgregarProductos
-function AgregarProductos() {
-return(
-    <>  
-      {inventario.map( producto=>{
-              return(
-                <React.Fragment>
+function  AgregarProductos() {
+  const condicion = true;
+  return(
+      <>  
+        {inventario.map( producto=>{
+                return(
                   <div className="col-lg-2 contenedor-card" id="producto">
                     <div className="contenedorCard">
                       <div className="card img">
@@ -17,15 +21,14 @@ return(
                           <p className="precio">"$"{producto.precio}</p>
                           <div>
                               <button id="boton{producto.id}" className="agregar-carrito" >agregar<i className="bi bi-cart-plus"></i></button>
+                             <Link to={"productos/"+producto.id}>Detalles</Link> 
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </React.Fragment>  
+          )}
         )}
-      )}
-  </>
-)
+    </>
+  )
 }
-
