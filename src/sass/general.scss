@@ -14,3 +14,19 @@
   border-radius: 5px;
   padding: 10px;
 }
+.carousel-inner{
+  height: 600px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gracias {
+  background-color: white;
+  display: flex;
+  color: orange;
+  font-size: 70px;
+  justify-content: center;
+  border: solid orange 4px;
+  padding: 20px;
+  text-aling: center; 
+}
