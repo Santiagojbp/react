@@ -20,7 +20,7 @@ function  AgregarProductos() {
                           <h3 className="card__title producto-nombre">{producto.nombre}</h3>
                           <p className="precio">"$"{producto.precio}</p>
                           <div>
-                              <button id="boton{producto.id}" className="agregar-carrito" >agregar<i className="bi bi-cart-plus"></i></button>
+                              <button  id="boton{producto.id}" className="agregar-carrito" >agregar<i className="bi bi-cart-plus"></i></button>
                              <Link className="detalles" to={"productos/"+producto.id}>Detalles</Link> 
                           </div>
                         </div>

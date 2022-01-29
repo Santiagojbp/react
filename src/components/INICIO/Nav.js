@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React from 'react'
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 let logo = './assets/img/fondos/icono2.0.jpg';
@@ -13,20 +14,10 @@ function NavComponents() {
 					<div>
 						<nav>
 							<ul className="contenedor-li">
-								<li className="nav-li"><a href="">Inicio</a></li>
-								<li className="nav-li">
-									<a >Categorias<i className="bi bi-caret-down"></i></a>
-									<ul className="contenedor-categorias">
-										<li className="li-categorias"><a href="">limpieza</a></li>
-										<li className="li-categorias"><a href="">limpieza</a></li>
-										<li className="li-categorias"><a href="">limpieza</a></li>
-										<li className="li-categorias"><a href="">limpieza</a></li>
-										<li className="li-categorias"><a href="">limpieza</a></li>
-									</ul>
-								</li>
-								<li className="nav-li"><a href="">Crear cuenta</a></li>
-								<li className="nav-li"><a href="">Ayuda</a></li>
-								<li className="nav-li"><a href="">Quienes somos</a></li>
+								<li className="nav-li"><Link ></Link> </li>
+								<li className="nav-li"><Link></Link> </li>
+								<li className="nav-li"><Link ></Link> </li>
+								<li className="nav-li"><Link></Link> </li>
 							</ul>
 						</nav>
 					</div>	
