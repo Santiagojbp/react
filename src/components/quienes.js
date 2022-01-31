@@ -1,10 +1,12 @@
-import { Link } from 'react-router-dom';
+
 import React from 'react'
+import NavComponents from './INICIO/Nav';
 export default Quienes 
 function Quienes() {
 	return(
 		<React.Fragment>
-			<div></div>
+			<NavComponents/>
+			<div>Hola Etoy en quienes</div>
 		</React.Fragment>
 		)
 }

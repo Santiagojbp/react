@@ -1,29 +1,30 @@
-import { Link } from 'react-router-dom';
-import React from 'react'
-import './sass/App.scss';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-import Inicio from './components/inicio';
-import Ayudar from './components/Ayuda'
-import Cuenta from './components/crearCuenta'
-import Quienes from './components/quienes'
-const ThemeContext = React.createContext()
+import React from "react";
+import "./sass/App.scss";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect  } from "react";
+import Inicio from "./components/Inicio";
+import Ayudar from "./components/Ayuda";
+import CrearCuenta from "./components/CrearCuenta";
+import Quienes from "./components/Quienes";
+import ThemeContext from "./components/context/ThemeContext";
 
-function App() {
-  const Home = ()=> <Inicio/>
-  const Cuentaa = ()=> <Cuenta/>
-  const Ayudaa = ()=> <Ayudar/>
-  const Quieness = ()=> <Quienes/>
-  return (
-    <BrowserRouter className="App"> 
-        <Routes>    
-            <Route exact path="/" element={<Home></Home>}/>
-            <Route exact path="/Cuentaa" element={<Home></Home>}/>
-            <Route exact path="/Ayudaa" element={<Ayudaa></Ayudaa>}/>
-            <Route exact path="/Quieness" element={<Quieness></Quieness>}/>
-        </Routes>
-    </BrowserRouter>
-  );
-};
+function App () {
+  const ThemeContext = React.createContext() 
+  const [state, setState] = useState('test')
+    return (
+      <ThemeContext.Provider value={state} >
+        <BrowserRouter className="App">
+          <Routes>
+            <Route path="/" element={<Inicio />} />
+            <Route path="/cuenta" element={<CrearCuenta/>} />
+            <Route path="/ayuda" element={<Ayudar/>} />
+            <Route path="/quienes" element={<Quienes />} />
+          </Routes>
+        </BrowserRouter>
+      </ThemeContext.Provider> 
+    );
 
+}
 export default App;
+

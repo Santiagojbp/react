@@ -1,5 +1,5 @@
 import inventario from "./../../../data/inventario"
-import {TYPES} from "./agregar-al-carrito" 
+import {TYPES} from "./cartActions" 
 
 export const CarritoInicio = {
 	inventario,
@@ -20,11 +20,9 @@ export function shopingReducer (state, action) {
 		case TYPES.limpiarCarrito:{
 			
 		}
-		break;
 
 		default:
 			return state;
-		break;
 	
 	}
 }

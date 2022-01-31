@@ -11,7 +11,7 @@ function Ayudar() {
 			<NavComponents/>
 			<AyudaContenido/>
 			<Ayuda/>
-			<footer/>
+			<Footer/>
 		</React.Fragment>
 		)
 }
